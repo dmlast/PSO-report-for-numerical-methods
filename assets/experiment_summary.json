@@ -1,0 +1,157 @@
+{
+  "quadratic_baseline": {
+    "label": "N=35, устойчивые параметры",
+    "function": "квадратичная, k=10",
+    "n_particles": 35,
+    "n_iter": 120,
+    "omega": 0.72,
+    "c1": 1.49,
+    "c2": 1.49,
+    "seed": 2,
+    "init_center": null,
+    "init_spread": 1.0,
+    "runtime_ms": 1.9262396002886817,
+    "summary": {
+      "final_f": 4.872621774758022e-13,
+      "hit_eps": 15,
+      "best_x1": 9.044750648727088e-07,
+      "best_x2": -1.2507965940756058e-07
+    }
+  },
+  "quadratic_small_swarm": {
+    "label": "N=8, мало частиц",
+    "function": "квадратичная, k=10",
+    "n_particles": 8,
+    "n_iter": 120,
+    "omega": 0.72,
+    "c1": 1.49,
+    "c2": 1.49,
+    "seed": 2,
+    "init_center": null,
+    "init_spread": 1.0,
+    "runtime_ms": 1.706695800385205,
+    "summary": {
+      "final_f": 3.6306963234656694e-12,
+      "hit_eps": 25,
+      "best_x1": -2.6928810892028627e-06,
+      "best_x2": 3.127952420504981e-08
+    }
+  },
+  "quadratic_ill_conditioned": {
+    "label": "k=100, узкая долина",
+    "function": "квадратичная, k=100",
+    "n_particles": 35,
+    "n_iter": 120,
+    "omega": 0.72,
+    "c1": 1.49,
+    "c2": 1.49,
+    "seed": 5,
+    "init_center": null,
+    "init_spread": 1.0,
+    "runtime_ms": 1.9126770996081177,
+    "summary": {
+      "final_f": 5.426199565072007e-15,
+      "hit_eps": 24,
+      "best_x1": -7.509275525387526e-08,
+      "best_x2": 7.2204412874322325e-09
+    }
+  },
+  "quadratic_slow": {
+    "label": "малая инерция и слабое притяжение",
+    "function": "квадратичная, k=10",
+    "n_particles": 25,
+    "n_iter": 120,
+    "omega": 0.2,
+    "c1": 0.35,
+    "c2": 0.35,
+    "seed": 9,
+    "init_center": null,
+    "init_spread": 1.0,
+    "runtime_ms": 1.9130312502966262,
+    "summary": {
+      "final_f": 8.806530225760371e-08,
+      "hit_eps": 16,
+      "best_x1": -0.00039047984849362963,
+      "best_x2": 4.86375291679167e-05
+    }
+  },
+  "rastrigin_baseline": {
+    "label": "N=35, устойчивые параметры",
+    "function": "Растригин, A=10",
+    "n_particles": 35,
+    "n_iter": 120,
+    "omega": 0.72,
+    "c1": 1.49,
+    "c2": 1.49,
+    "seed": 4,
+    "init_center": null,
+    "init_spread": 1.0,
+    "runtime_ms": 2.1728104002249893,
+    "summary": {
+      "final_f": 8.881784197001252e-14,
+      "hit_eps": 26,
+      "best_x1": -8.911376711301761e-09,
+      "best_x2": 1.9119887760847936e-08
+    }
+  },
+  "rastrigin_small_swarm": {
+    "label": "N=8, мало частиц",
+    "function": "Растригин, A=10",
+    "n_particles": 8,
+    "n_iter": 120,
+    "omega": 0.72,
+    "c1": 1.49,
+    "c2": 1.49,
+    "seed": 4,
+    "init_center": null,
+    "init_spread": 1.0,
+    "runtime_ms": 1.9765562501561362,
+    "summary": {
+      "final_f": 0.9949590682833289,
+      "hit_eps": null,
+      "best_x1": -0.9949539142414273,
+      "best_x2": 5.839878926692372e-06
+    }
+  },
+  "rastrigin_local_start": {
+    "label": "частицы стартуют около (3,3)",
+    "function": "Растригин, A=10",
+    "n_particles": 12,
+    "n_iter": 120,
+    "omega": 0.25,
+    "c1": 0.55,
+    "c2": 0.55,
+    "seed": 11,
+    "init_center": [
+      3.0,
+      3.0
+    ],
+    "init_spread": 0.06,
+    "runtime_ms": 2.037685450341087,
+    "summary": {
+      "final_f": 17.909202482974305,
+      "hit_eps": null,
+      "best_x1": 2.9848557048495463,
+      "best_x2": 2.9848556631616616
+    }
+  },
+  "rastrigin_harder": {
+    "label": "A=20, более резкий рельеф",
+    "function": "Растригин, A=20",
+    "n_particles": 35,
+    "n_iter": 120,
+    "omega": 0.72,
+    "c1": 1.49,
+    "c2": 1.49,
+    "seed": 12,
+    "init_center": null,
+    "init_spread": 1.0,
+    "runtime_ms": 2.292825000040466,
+    "summary": {
+      "final_f": 1.3648318031300732e-09,
+      "hit_eps": 59,
+      "best_x1": 1.8295588645433184e-06,
+      "best_x2": -3.1802325295470463e-07
+    }
+  }
+}
