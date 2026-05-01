@@ -17,6 +17,7 @@ from src.pso_core import PSOConfig, make_quadratic, make_rastrigin, pso, summari
 
 ASSETS = ROOT / "assets"
 TIMED_RUNS = 20
+ANIMATION_DPI = 100
 
 
 def surface_grid(objective, lim: float, n: int = 220):
@@ -202,7 +203,7 @@ def save_animation_frames(
     frame_paths = []
 
     for frame_no, iteration in enumerate(range(0, len(positions), every)):
-        fig, ax = plt.subplots(figsize=(6.2, 5.2), dpi=140)
+        fig, ax = plt.subplots(figsize=(6.2, 5.2), dpi=ANIMATION_DPI)
         contour = ax.contourf(xx, yy, zz, levels=levels, cmap="viridis")
         ax.contour(xx, yy, zz, levels=levels, colors="white", linewidths=0.25, alpha=0.25)
         ax.scatter(

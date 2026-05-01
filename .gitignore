@@ -20,7 +20,6 @@ __pycache__/
 *.toc
 *.vrb
 *.xdv
-tex/slides.pdf
 
 # Regenerated animation frames; final GIFs are kept in assets/.
 assets/frames_*/
