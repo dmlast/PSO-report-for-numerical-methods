@@ -24,40 +24,6 @@
 | <img src="assets/pso_quadratic_ill_conditioned.gif" alt="PSO на плохо обусловленной квадратичной функции" width="380"> | <img src="assets/pso_rastrigin_local_start.gif" alt="PSO на функции Растригина при локальном старте" width="380"> |
 | <img src="assets/pso_quadratic_slow.gif" alt="PSO на квадратичной функции с медленными параметрами" width="380"> | <img src="assets/pso_rastrigin_harder.gif" alt="PSO на более сложной функции Растригина" width="380"> |
 
-## Быстрый старт
-
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-```
-
-Открыть notebook:
-
-```bash
-jupyter lab notebooks/pso_demo.ipynb
-```
-
-Перегенерировать изображения, GIF и сводку экспериментов:
-
-```bash
-make assets
-```
-
-Собрать презентацию:
-
-```bash
-make slides
-```
-
-Готовый PDF создается как `tex/slides.pdf` и хранится в репозитории. Анимации в PDF сделаны через пакет `animate`; они обычно воспроизводятся в Adobe Acrobat Reader и могут не работать во встроенном просмотрщике браузера или Preview на macOS.
-
-Для сборки слайдов нужны `latexmk`, XeLaTeX и Biber. Полная сборка ассетов и презентации:
-
-```bash
-make all
-```
-
 ## Основная идея
 
 PSO хранит лучший личный опыт каждой частицы и лучший результат всего роя. На каждом шаге частица смешивает инерцию, притяжение к своему лучшему положению и притяжение к лучшему положению роя:
